@@ -46,7 +46,7 @@ particles[:, 3] = np.random.uniform(-0.5, 0.5, num_particles)
 
 weights = np.ones(num_particles) / num_particles
 
-# generate my balls
+# generate smegma points
 true_trajectory = [figure_eight(t * dt) for t in range(time_steps)]
 measurements = [point + np.random.normal(0, 0.2, 2) for point in true_trajectory] # Add noise to measurements
 
